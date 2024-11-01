@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "rbplugin/slider-rb",
+	"version": "1.0.0",
+	"title": "Slider Rb",
+	"category": "media",
+	"icon": "smiley",
+	"description": "An example block viewing and saving post meta",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		
+		"mediaIDs": {
+			"type": "array",
+			"default": []
+		},
+		
+		"autoplay": {
+            "type": "boolean",                        
+            "default": true
+        },
+		"delay": {
+            "type": "integer",                        
+            "default": 4000
+        },
+		
+		"direction": {
+            "type": "string",                        
+            "default": "horizontal"
+        },
+		
+		"width": {
+            "type": "integer",                        
+            "default": "100"
+        },
+		"widthUnit": {
+            "type": "string",                        
+            "default": "%"
+        },
+		"height": {
+            "type": "integer",                        
+            "default": "50"
+        },
+		"heightUnit": {
+            "type": "string",                        
+            "default": "vh"
+        },
+        "bg_color": { "type": "string", "default": "#000000" },
+        "text_color": { "type": "string", "default": "#ffffff" }
+	},
+	"textdomain": "slider-rb",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/index.css"
+}
